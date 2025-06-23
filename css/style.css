@@ -1,5 +1,30 @@
 
 /*** Spinner Start ***/
+:root {
+    --bs-primary: #e91e63; /* Pink */
+  }
+
+  .text-primary {
+    color: #e91e63 !important;
+  }
+ 
+  .btn-primary {
+    background-color: #e91e63 !important;
+    border-color: #e91e63 !important;
+    color: white !important;
+  }
+
+ 
+
+  .spinner-grow.text-primary {
+    color: #e91e63 !important;
+    background-color: #e91e63 !important;
+  }
+
+  .fa-heart {
+    color: #e91e63 !important;
+  }
+  
 #spinner {
     opacity: 0;
     visibility: hidden;
@@ -211,58 +236,118 @@
     min-height:150vh
     
 }
+:root {
+    --bs-primary: #e91e63; /* Bootstrap primary pink */
+  }
 
+  .text-primary {
+    color: #e91e63 !important;
+  }
+
+  .btn-primary {
+    background-color: #e91e63 !important;
+    border-color: #e91e63 !important;
+  }
+
+  .btn-primary:hover {
+    background-color: #c2185b !important;
+    border-color: #c2185b !important;
+  }
+  
+  :root {
+    --bs-primary: #e91e63; /* Pink (Material Design Pink 500) */
+    --bs-primary-rgb: 233, 30, 99;
+  }
+
+  /* For all text marked as primary */
+
+  /* For heart icon */
+  .fa-heart {
+    color: #e91e63 !important;
+  }
+
+  /* For buttons */
+  .btn-primary {
+    background-color: #e91e63 !important;
+    border-color: #e91e63 !important;
+    color: white !important;
+  }
+
+  .btn-primary:hover {
+    background-color: #c2185b !important;
+    border-color: #c2185b !important;
+  }
+
+  /* For spinner */
+  .spinner-grow.text-primary {
+    color: #e91e63 !important;
+    background-color: #e91e63 !important;
+  }
+
+  /* For backgrounds like box around wedding events image */
+  .bg-primary {
+    background-color: #e91e63 !important;
+  }
+
+  /* For text like “Our Wedding Events” heading */
+  .text-uppercase.text-primary {
+    color: #e91e63 !important;
+  }
+
+
+
+/* Carousel Image Styling - Natural Full Width */
 .carousel-item img {
-    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 150vh; /* Keep original image height */
     object-fit: cover;
 }
 
+/* Carousel Caption Styling - Centered */
 .carousel-item .carousel-caption {
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: end;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
+    flex-direction: column;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4));
-    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    padding: 20px;
 }
 
+/* Hide Carousel Controls */
 .carousel-control-prev,
 .carousel-control-next {
     opacity: 0;
+    pointer-events: none;
 }
 
-.carousel-control-prev .carousel-control-prev-icon,
-.carousel-control-next .carousel-control-next-icon {
-    background: transparent;
-}
-
+/* Clean Carousel Indicators */
 #carouselId .carousel-indicators {
-    padding-bottom: 30px;
+    bottom: 20px;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 #carouselId .carousel-indicators li {
-    border-top: 10px solid var(--bs-white);
-    border-bottom: 10px solid var(--bs-white);
-    border-right: 5px solid var(--bs-white);
-    border-left: 5px solid var(--bs-white);
-    margin-right: 10px;
-    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.5); /* soft white */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: none;
+    transition: 0.3s;
 }
 
 #carouselId .carousel-indicators li.active {
-    background: var(--bs-primary);
-    border-color: var(--bs-primary);
-    border-right: 15px solid var(--bs-primary);
-    border-left: 15px solid var(--bs-primary);
+    background-color: #ff69b4; /* pink active dot */
+    transform: scale(1.2);
 }
-/*** Carousel End ***/
+
 
 
 /*** Wedding Story Start ***/
@@ -514,3 +599,4 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
